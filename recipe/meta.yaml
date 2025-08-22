@@ -1,5 +1,5 @@
 {% set name = "types-PyMySQL" %}
-{% set version = "1.1.0.20250711" %}
+{% set version = "1.1.0.20250822" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') | lower }}-{{ version }}.tar.gz
-  sha256: 38690d5e6d290eb56b9a451c79643c86663e1993344b818c69128977867a5ab9
+  sha256: 18448c957360b3d21dea75a651e81209b75c1d647ad58a9984af8b2b1b255a5c
 
 build:
   number: 0
