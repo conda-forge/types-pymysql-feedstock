@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: types-PyMySQL
-  version: "1.1.0.20260408"
+  version: "1.1.0.20260508"
 
 package:
   name: ${{ name | lower }}
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/types_pymysql-${{ version }}.tar.gz
-  sha256: b784dc37908479e3767e2d794ab507b3674adb1c686ca3d13fc9e2960dbcb9ec
+  sha256: 49abf0c2f8d944384834544a8f25ea1b25018c3d815f7ec676f73d0b7fe0731c
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - ${{ PYTHON }} -m pip install . -vv
