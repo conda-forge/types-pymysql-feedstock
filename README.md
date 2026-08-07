@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `types-pymysql` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install types-pymysql
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install types-pymysql
 ```
 
-It is possible to list all of the versions of `types-pymysql` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add types-pymysql
+# for installing globally
+pixi global install types-pymysql
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `types-pymysql` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search types-pymysql --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search types-pymysql --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search types-pymysql --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds types-pymysql --channel conda-forge
 # List dependencies of `types-pymysql`:
 mamba repoquery depends types-pymysql --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
